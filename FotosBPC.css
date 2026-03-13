@@ -1,0 +1,31 @@
+
+.producto{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+padding:50px;
+}
+
+.galeria{
+flex:1;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.galeria img{
+width:100%;
+border-radius:8px;
+}
+
+.info{
+flex:1;
+}
+
+.boton{
+background:#2e7d32;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
