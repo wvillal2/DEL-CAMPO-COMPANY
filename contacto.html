@@ -13,92 +13,107 @@
 
 <body>
 
-  <header class="header">
-
+    <header class="header">
     <div class="logo">
-      <h1>Del Campo Company</h1>
-      <p>Productos frescos del Urabá Antioqueño</p>
+      <img src="images/logo.png" alt="Logo Del Campo Company" class="logo-img">
+      <div class="logo-texto">
+        <h1>Del Campo Company</h1>
+        <p>Productos frescos del Urabá Antioqueño</p>
+      </div>
     </div>
-
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-
     <nav id="menu">
-
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Nuestros Productos</a></li>
-        <li><a href="historia.html">Nuestra Historia</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a class="nav-link" href="index.html">Inicio</a></li>
+        <li><a class="nav-link" href="productos.html">Productos</a></li>
+        <li><a class="nav-link" href="historia.html">Historia</a></li>
+        <li><a class="nav-link" href="recetas.html">Recetas</a></li>
+        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
-
     </nav>
-
+    <div class="header-fruits">
+      <span class="fruit-icon fruit-coco"></span>
+      <span class="fruit-icon fruit-limon"></span>
+    </div>
   </header>
 
-
   <main>
+
 
     <section class="contacto">
 
       <h2>Contáctanos</h2>
+      <p>Si deseas más información sobre nuestros productos o realizar pedidos, puedes comunicarte directamente con
+        nuestros gerentes o ubicar nuestra empresa en el mapa.</p>
+      <form class="form-contacto">
 
-      <p>
-        Si deseas más información sobre nuestros productos agrícolas o realizar
-        pedidos, puedes comunicarte con nosotros a través de los siguientes medios.
-      </p>
+        <h2>Solicitar información</h2>
 
-      <div class="contacto-grid">
+        <input type="text" placeholder="Nombre completo" required>
 
-        <div class="contacto-card">
+        <input type="text" placeholder="Empresa (opcional)">
 
-          <h3>Ubicación</h3>
+        <input type="tel" placeholder="Teléfono o WhatsApp" required>
 
-          <p>Urabá Antioquia, Colombia</p>
+        <select required>
+          <option value="">Seleccione producto</option>
+          <option>Plátano</option>
+          <option>Banano</option>
+          <option>Aguacate</option>
+          <option>Coco</option>
+          <option>Yuca</option>
+        </select>
 
+        <input type="text" placeholder="Cantidad aproximada (ej: 500 kg)">
+
+        <input type="text" placeholder="Ciudad de destino">
+
+        <textarea placeholder="Mensaje o requerimiento"></textarea>
+
+        <button type="submit">Solicitar cotización</button>
+
+      </form>
+      <br><br>
+
+      <div class="gerentes-grid">
+
+
+        <div class="contacto-card gerente-card">
+          <img src="images/kelly.jpg" alt="Kelly - Gerente Comercial" class="gerente-img">
+          <h3>Kelly Jhoana Villalobos Segura</h3>
+          <p>Gerente Comercial</p>
+          <p><a href="https://wa.me/573105981098" class="boton-contacto">WhatsApp</a></p>
+          <p><a href="mailto:kellyjoha7@hotmail.com" class="boton-contacto">Correo</a></p>
         </div>
 
 
-        <div class="contacto-card">
-
-          <h3>Correo electrónico</h3>
-
-          <p>kellyjoha7@hotmail.com</p>
-
-          <a href="mailto:kellyjoha7@hotmail.com" class="boton-contacto">Enviar correo</a>
-
-        </div>
-
-
-        <div class="contacto-card">
-
-          <h3>Teléfonos</h3>
-
-          <p>+57 310 598 1098</p>
-          <p>+57 301 453 1065</p>
-
-          <a href="https://wa.me/573105981098" class="boton-contacto">Escribir por WhatsApp</a>
-
+        <div class="contacto-card gerente-card">
+          <img src="images/juan.png" alt="Juan - Gerente de Producción" class="gerente-img">
+          <h3>Juan Carlos Blandon Palacios</h3>
+          <p>Gerente de Producción</p>
+          <p><a href="https://wa.me/573014531065" class="boton-contacto">WhatsApp</a></p>
+          <p><a href="mailto:juancarlosblandon@hotmail.com" class="boton-contacto">Correo</a></p>
         </div>
 
       </div>
 
+
+      <h2>Ubicación</h2>
+      <div class="contacto-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d556.1096892946501!2d-76.63720993876171!3d7.887914646355007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1775689054289!5m2!1ses-419!2sco"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
     </section>
+
   </main>
-
-
   <footer>
-
     <p>© 2026 Del Campo Company</p>
-
   </footer>
-
-
-  <a href="https://wa.me/573105981098" class="whatsapp" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  <a href="https://wa.me/573105981098" class="whatsapp" target="_blank" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
-
-  <script src="menu.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>

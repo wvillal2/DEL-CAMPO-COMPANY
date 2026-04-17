@@ -11,20 +11,27 @@
 
 <body>
 
-  <header class="header">
+    <header class="header">
     <div class="logo">
-      <h1>Del Campo Company</h1>
-      <p>Productos frescos del Urabá Antioqueño</p>
+      <img src="images/logo.png" alt="Logo Del Campo Company" class="logo-img">
+      <div class="logo-texto">
+        <h1>Del Campo Company</h1>
+        <p>Productos frescos del Urabá Antioqueño</p>
+      </div>
     </div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav id="menu">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Nuestros Productos</a></li>
-        <li><a href="historia.html">Nuestra Historia</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a class="nav-link" href="index.html">Inicio</a></li>
+        <li><a class="nav-link" href="productos.html">Productos</a></li>
+        <li><a class="nav-link" href="historia.html">Historia</a></li>
+        <li><a class="nav-link" href="recetas.html">Recetas</a></li>
+        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <div class="header-fruits">
+      <span class="fruit-icon fruit-coco"></span>
+      <span class="fruit-icon fruit-limon"></span>
+    </div>
   </header>
 
   <main>
@@ -48,21 +55,17 @@
           </p>
         </div>
         <div class="historia-imagen">
-          <img src="images/Abuelo historia.png" alt="Campo agrícola">
+          <img src="images/Abuelo_historia.jpg" alt="Campo agrícola">
         </div>
       </div>
     </section>
   </main>
-
   <footer>
     <p>© 2026 Del Campo Company</p>
   </footer>
-
-  <a href="https://wa.me/573105981098" class="whatsapp" target="_blank">
+  <a href="https://wa.me/573105981098" class="whatsapp" target="_blank" aria-label="WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
-
-  <script src="menu.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

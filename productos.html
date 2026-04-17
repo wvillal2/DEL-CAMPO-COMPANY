@@ -11,20 +11,27 @@
 
 <body>
 
-  <header class="header">
+    <header class="header">
     <div class="logo">
-      <h1>Del Campo Company</h1>
-      <p>Productos frescos del Urabá Antioqueño</p>
+      <img src="images/logo.png" alt="Logo Del Campo Company" class="logo-img">
+      <div class="logo-texto">
+        <h1>Del Campo Company</h1>
+        <p>Productos frescos del Urabá Antioqueño</p>
+      </div>
     </div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav id="menu">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Nuestros Productos</a></li>
-        <li><a href="historia.html">Nuestra Historia</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a class="nav-link" href="index.html">Inicio</a></li>
+        <li><a class="nav-link" href="productos.html">Productos</a></li>
+        <li><a class="nav-link" href="historia.html">Historia</a></li>
+        <li><a class="nav-link" href="recetas.html">Recetas</a></li>
+        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <div class="header-fruits">
+      <span class="fruit-icon fruit-coco"></span>
+      <span class="fruit-icon fruit-limon"></span>
+    </div>
   </header>
 
   <main>
@@ -37,7 +44,7 @@
 
         <div class="producto-card">
 
-          <img src="images/banano.png" alt="Banano">
+          <img src="images/banano/banano.png" alt="Banano">
 
           <h3>Banano Cavendish</h3>
 
@@ -50,7 +57,7 @@
 
         <div class="producto-card">
 
-          <img src="images/platano.png" alt="Plátano">
+          <img src="images/platano/platano.png" alt="Plátano">
 
           <h3>Plátano Hartón</h3>
 
@@ -63,7 +70,7 @@
 
         <div class="producto-card">
 
-          <img src="images/coco.png" alt="Coco">
+          <img src="images/coco/coco.png" alt="Coco">
 
           <h3>Coco Criollo</h3>
 
@@ -76,7 +83,7 @@
 
         <div class="producto-card">
 
-          <img src="images/auyama.png" alt="Auyama">
+          <img src="images/auyama/auyama.png" alt="Auyama">
 
           <h3>Auyama / Zapallo</h3>
 
@@ -86,21 +93,43 @@
 
         </div>
 
+        <div class="producto-card">
+
+          <img src="images/limon/limonpartido.jpg" alt="Limón">
+
+          <h3>Limón</h3>
+
+          <p>Producto fresco. Disponibilidad según temporada de cosecha.</p>
+
+          <a href="limon.html" class="boton-producto">Ver más</a>
+
+        </div>
+
+        
+        <div class="producto-card">
+
+          <img src="images/yuca/yuca.png" alt="Yuca">
+
+          <h3>Yuca</h3>
+
+          <p>Producto fresco. Disponibilidad según temporada de cosecha.</p>
+
+          <a href="yuca.html" class="boton-producto">Ver más</a>
+
+        </div>
+      
+
       </div>
 
 
     </section>
   </main>
-
   <footer>
     <p>© 2026 Del Campo Company</p>
   </footer>
-
-  <a href="https://wa.me/573105981098" class="whatsapp" target="_blank">
+  <a href="https://wa.me/573105981098" class="whatsapp" target="_blank" aria-label="WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
-
-  <script src="menu.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
