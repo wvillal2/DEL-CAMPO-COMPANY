@@ -182,8 +182,9 @@ nav a {
   transform-origin: center;
 }
 
+/* COCO */
 .fruit-coco {
-  background-image: url('images/coco/coco.png');
+  background-image: url('images/icons/cocoIcon.png');
   top: 22px;
   right: 90px;
   width: 40px;
@@ -191,8 +192,9 @@ nav a {
   animation-delay: 1.2s;
 }
 
+/* LIMÓN */
 .fruit-limon {
-  background-image: url('images/limon/limonpartido.jpg');
+  background-image: url('images/icons/limon.png');
   top: 60px;
   right: 18px;
   width: 36px;
@@ -200,6 +202,46 @@ nav a {
   animation-delay: 2.4s;
 }
 
+/* BANANO */
+.fruit-banano {
+  background-image: url('images/icons/banano.png');
+  top: 15px;
+  left: 30px;
+  width: 42px;
+  height: 42px;
+  animation-delay: 0.5s;
+}
+
+/* CALABAZA */
+.fruit-calabaza {
+  background-image: url('images/icons/calabaza.png');
+  top: 100px;
+  right: 50px;
+  width: 45px;
+  height: 45px;
+  animation-delay: 1.8s;
+}
+
+/* PLÁTANO */
+.fruit-platano {
+  background-image: url('images/icons/platanoV.png');
+  top: 140px;
+  left: 80px;
+  width: 40px;
+  height: 40px;
+  animation-delay: 2.8s;
+}
+
+/* YUCA */
+.fruit-yuca {
+  background-image: url('images/icons/yuca.png');
+  top: 190px;
+  right: 120px;
+  width: 44px;
+  height: 44px;
+  animation-delay: 3.2s;
+}
+ 
 @keyframes floatFruit {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-12px) rotate(10deg); }
