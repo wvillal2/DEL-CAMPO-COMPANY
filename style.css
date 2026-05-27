@@ -297,16 +297,6 @@ nav a.active::after {
   line-height: 1.75;
 }
 
-.banner::after {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  background: rgba(255,255,255,0.35);
-  border-radius: 50%;
-  top: -40px;
-  right: -40px;
-}
 
 /* BOTÓN PRINCIPAL */
 .btn-principal,
@@ -758,4 +748,125 @@ button:hover, .btn:hover {
   font-size: 40px;
   color: white;
   cursor: pointer;
+}
+
+/* ========================= */
+/* ===== RECETAS =========== */
+/* ========================= */
+
+.productos{
+    padding: 80px 8%;
+    background: linear-gradient(to bottom, #fffdf8, #f4f8f2);
+}
+
+.productos h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #2d5a27;
+    margin-bottom: 15px;
+}
+
+.productos p{
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* ===== CARD ===== */
+
+.recipe-card{
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.recipe-card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+/* ===== IMAGEN ===== */
+
+.recipe-card img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.recipe-card:hover img{
+    transform: scale(1.08);
+}
+
+/* ===== CONTENIDO ===== */
+
+.recipe-content{
+    padding: 25px;
+}
+
+.recipe-content h3{
+    color: #2d5a27;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.recipe-content p{
+    color: #666;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ===== EFECTO BRILLO ===== */
+
+.recipe-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transition: 0.7s;
+}
+
+.recipe-card:hover::before{
+    left: 100%;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .productos h2{
+        font-size: 2.2rem;
+    }
+
+    .recipe-card img{
+        height: 210px;
+    }
+}
+.tag{
+    background:#dff5d8;
+    color:#2d5a27;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:0.8rem;
+    font-weight:bold;
 }
